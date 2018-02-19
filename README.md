@@ -57,7 +57,7 @@ Sooner or later I will complete it with the relative answers. Feel free to contr
 * Many state that, in Object-Oriented Programming, Composition is often a better option than Inheritance. What's you opinion?
 * What is an Anti-corruption Layer?
 * Singleton is a design pattern that restricts the instantiation of a class to one single object. Writing a Thread-Safe Singleton class is not so obvious. Would you try?
-* The ability to change implementation without affecting clients is called Data Abstraction. Produce and example violating this property, then fix it.
+* The ability to change implementation without affecting clients is called Data Abstraction. Produce an example violating this property, then fix it.
 * Write a snippet of code violating the Don't Repeat Yourself (DRY) principle. Then, fix it.
 * How would you deal with Dependency Hell?
 * Is goto evil? You may have heard of the famous paper "Go To Statement Considered Harmful" by Edsger Dijkstra, in which he criticized the use of the `goto` statement and advocated structured programming instead. The use of `goto` has always been controversial, so much that even Dijkstra's letter was criticized with articles such as "'GOTO Considered Harmful' Considered Harmful". What's your opinion on the use of `goto`?
@@ -76,6 +76,9 @@ Sooner or later I will complete it with the relative answers. Feel free to contr
 * Are comments in code useful? Some say they should be avoided as much as possible, and hopefully made unnecessary. Do you agree?
 * What is the difference between design and architecture?
 * Why in TDD are tests written before code?
+
+> 1. We write tests first to ensure we understand what we're trying to achieve. If we can't write sensible tests it's likely we don't understand the problem we're trying to solve.
+
 * C++ supports multiple inheritance, and Java allows a class to implement multiple interfaces. What impact does using these facilities have on orthogonality? Is there a difference in impact between using multiple inheritance and multiple interfaces? Is there a difference between using delegation and using inheritance? [This question is from The Pragmatic Programmer, by Andrew Hunt and David Thomas]
 * Pros and cons of holding domain logic in Stored Procedures.
 * In your opinion, why have Object-Oriented Design dominated the market for so many years?

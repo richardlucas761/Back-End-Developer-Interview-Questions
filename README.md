@@ -84,6 +84,11 @@ Sooner or later I will complete it with the relative answers. Feel free to contr
 
 * C++ supports multiple inheritance, and Java allows a class to implement multiple interfaces. What impact does using these facilities have on orthogonality? Is there a difference in impact between using multiple inheritance and multiple interfaces? Is there a difference between using delegation and using inheritance? [This question is from The Pragmatic Programmer, by Andrew Hunt and David Thomas]
 * Pros and cons of holding domain logic in Stored Procedures.
+
+> PRO: Domain logic in a Stored Procedure could be self documenting as it describes the logic through clearly written SQL or useful comments.
+> PRO: Executing logic closer to the database should be better.
+> CON: Storing your domain logic in a *specific* variant of SQL such as T-SQL in the case of SQL Server could make it difficult to migrate to a different database if the database platform changed to Oracle (for example). Development and re-testing effort might be needed to translate T-SQL logic into PL/SQL.
+
 * In your opinion, why have Object-Oriented Design dominated the market for so many years?
 * What would you do to understand if your code has a bad design?
 

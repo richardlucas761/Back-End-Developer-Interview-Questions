@@ -77,7 +77,10 @@ Sooner or later I will complete it with the relative answers. Feel free to contr
 * What is the difference between design and architecture?
 * Why in TDD are tests written before code?
 
-> 1. We write tests first to ensure we understand what we're trying to achieve. If we can't write sensible tests it's likely we don't understand the problem we're trying to solve.
+> 1. We write tests first to ensure we understand what we're trying to achieve. If we *can't* write sensible tests it's likely we don't understand the problem we're trying to solve.
+> 2. If unit tests end up being too complicated in having to mock a large number of objects this could suggest there are issues with the code such as violations of **SOLID** principles.
+> 3. We write tests first to help define the scope of what we're trying to achieve (*although we should still have tests for unexpected results*) to ensure we only write enough code to satisfy the requirement.
+> 4. Unit tests are useful for when we want to refactor code as they ensure any routines being refactored are still producing the same output. **Red** (write failing tests), **Green** (unit tests pass) and then **Refactor**.
 
 * C++ supports multiple inheritance, and Java allows a class to implement multiple interfaces. What impact does using these facilities have on orthogonality? Is there a difference in impact between using multiple inheritance and multiple interfaces? Is there a difference between using delegation and using inheritance? [This question is from The Pragmatic Programmer, by Andrew Hunt and David Thomas]
 * Pros and cons of holding domain logic in Stored Procedures.

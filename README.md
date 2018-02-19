@@ -134,6 +134,13 @@ Sooner or later I will complete it with the relative answers. Feel free to contr
 ### [[↑]](#toc) <a name='databases'>Questions about Databases:</a>
 
 * How would you migrate an application from a database to another, for example from MySQL to PostgreSQL? If you had to manage that project, which issues would you expect to face?
+
+> 1. As per a previous answer it depends whether there are any stored procedures or functions in use (or other "code" in the database) rather than the application using the database as this might need to be migrated (or at least re-tested) or moved into a different application layer.
+> 2. It might be nice to take advantage of having the "hood up" on a software platform to split it into different application layers to make the *next* database migration simpler.
+> 3. Depending on whether one exists already it might be useful to create a Data Dictionary of all of the objects in the source database.
+> 4. Are there any *other systems* that are connecting to the current MySQL database either through end points in the MySQL database or directly into the database, do these need to be migrated to the new database platform and re-tested? This might be problematic if external teams or customers are connecting to the current database as they may not have factored in any time to migrate.
+> 5. Are there any performance statistics or service level agreements in place to describe how quickly the database should respond to test the new database is at least as fast as the previous?
+
 * Why databases treat null as a so special case? For example, why in SQL ```SELECT * FROM table WHERE field = null``` does not match records with null ``field``?
 * ACID is an acronym that refers to Atomicity, Consistency, Isolation and Durability, 4 properties guaranteed by a database transaction in most of the database engines. What do you know about this topic? Would you like to elaborate?
 * How would you manage database schema migrations, that is, how would you automate the changes a database schema is affected to, as the application evolve, version after version?
